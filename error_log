@@ -1,0 +1,10 @@
+[07-Jul-2016 16:26:59 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/canaljes/public_html/wp-content/themes/jesustv2016/functions.php on line 3
+[02-Aug-2016 22:48:49 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/canaljes/public_html/wp-content/themes/jesustv2016/functions.php on line 3
+[03-Aug-2016 09:36:26 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/canaljes/public_html/wp-content/themes/jesustv2016/functions.php on line 3
+[06-Aug-2016 01:25:39 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/canaljes/public_html/wp-content/themes/jesustv2016/functions.php on line 3
+[06-Aug-2016 08:50:15 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/canaljes/public_html/wp-content/themes/jesustv2016/functions.php on line 3
+[07-Aug-2016 10:10:56 America/Chicago] PHP Fatal error:  Call to undefined function language_attributes() in /home/canaljes/public_html/wp-content/themes/jesustv2016/header.php on line 2
+[07-Aug-2016 10:10:57 America/Chicago] PHP Fatal error:  Call to undefined function wp_footer() in /home/canaljes/public_html/wp-content/themes/jesustv2016/footer.php on line 10
+[10-Aug-2016 14:33:01 America/Chicago] PHP Fatal error:  Call to undefined function add_theme_support() in /home/canaljes/public_html/wp-content/themes/jesustv2016/functions.php on line 3
+[02-Dec-2016 22:21:30 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/canaljes/public_html/wp-content/themes/jesustv2016/index.php on line 5
+[28-Jan-2017 07:45:26 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/canaljes/public_html/wp-content/themes/jesustv2016/index.php on line 5
