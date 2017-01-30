@@ -1,53 +1,74 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?> data-ng-app>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, minimum-scale = 1, maximum-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo('name'); ?></title>
-	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/style.css">		
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-    <script type='text/javascript' src="<?php bloginfo('stylesheet_directory'); ?>/js/menu_jquery.js"></script>    
-	<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/ie.js?ver=1.15'></script>
-	<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/tinynav.min.js?ver=1.15'></script>
-	<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/jquery.validate.min.js?ver=1.15'></script>
-	<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/jquery.isotope.min.js?ver=1.15'></script>
-	<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/jquery-ui-1.10.1.custom.min.js?ver=1.15'></script>
-	<script type='text/javascript' src='<?php bloginfo('stylesheet_directory'); ?>/js/custom.js?ver=1.15'></script>
-<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" type="image/x-icon" />			
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<!--[if lt IE 9]>
-	    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-	<![endif]-->
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-15459661-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })(); 
-</script>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55090c21315da8d3" async="async"></script>
-	<?php wp_head(); ?>
-</head>
-<body>
-<div  id="page-wrap">
-<header>
-	<div class="banner">
-	<?php 
+<?php 
 
-		if ( function_exists( 'soliloquy' ) ) { soliloquy( '1243' ); } 
-		if ( function_exists( 'soliloquy' ) ) { soliloquy( 'canaljesustv', 'slug' ); }
-		
-	 ?>
+include get_template_directory().'/libs/headermeta.php';
+
+?>
+
+
+<body>
+
+<div class="e-menu">
+	<div class="container">
+		<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-default" role="navigation">
+					  <div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+			    		  <a class="navbar-brand" href="#">Menu</a> 
+					    </div>
+
+					        <?php
+					            wp_nav_menu( array(
+					                'menu'              => 'primary',
+					                'theme_location'    => 'primary',
+					                'depth'             => 2,
+					                'container'         => 'div',
+					                'container_class'   => 'collapse navbar-collapse',
+					        		'container_id'      => 'bs-example-navbar-collapse-1',
+					                'menu_class'        => 'nav navbar-nav',
+					                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+					                'walker'            => new wp_bootstrap_navwalker())
+					            );
+					        ?>
+					    </div>
+					</nav>
+			</div>
+		</div>
 	</div>
-	<nav><?php  showMenu();  ?></nav>		
-</header>
-<div class="zerogrid">
+</div>
+<div class="m-header">
+<div class="container">
+	<div class="row">
+		<div class="m-h">
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<div class="ls">
+					<?php logo(); ?>
+				</div>					
+			</div>
+			<div class="col-xs-12  col-sm-8 col-md-8">
+				<div class="sm">
+					<div class="social">
+						<p>Síguenos en: </p>
+						<div>
+							<a href="https://www.facebook.com/Jesustvguatemala"><i class="fe fa fa-facebook"></i></a>
+							<a href="https://twitter.com/canaljesustv"><i class="tw fa fa-twitter"></i></a>
+							<a href="https://www.youtube.com/user/JesustvOnline/"><i class="yo fa fa-youtube"></i></a>
+						</div>
+					</div>
+					<div class="teljtv">
+						<p><i class="dir fa fa-map-marker"></i> 6av. 39-35 zona 8</p>
+						<p><i class="cel fa fa-phone"></i> (502) 2440 - 4032 / (502) 2440 - 4719</p>
+					</div>
+				</div>					
+			</div>
+		</div>
+	</div>		
+</div>
+</div>

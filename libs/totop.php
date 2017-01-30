@@ -1,5 +1,5 @@
 <?php 
-/* Back To Top */
+/*=========== Back To Top =====================*/
     add_action( 'wp_footer', 'back_to_top' );
     function back_to_top() {
     echo '<a id="totop" href="#">Back to Top</a>';
@@ -32,5 +32,5 @@
     });
     });
     </script>';
-    }   
+    } 
 ?>

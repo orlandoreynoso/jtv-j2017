@@ -1,4 +1,5 @@
-<?php 
+<?php  
+function paginacion(){
 /*============= paginacion copiada de la web ==============*/
 /***** Numbered Page Navigation (Pagination) Code.
       Tested up to WordPress version 3.1.2 *****/
@@ -18,7 +19,7 @@ function pagenavi($before = '', $after = '') {
     $pagenavi_options['page_text'] = '%PAGE_NUMBER%';
     $pagenavi_options['first_text'] = ('Inicio');
     $pagenavi_options['last_text'] = ('Final');
-    $pagenavi_options['next_text'] = 'Siguiente &raquo;';
+    $pagenavi_options['next_text'] = '<span class="next">Siguiente &raquo;</span>';
     $pagenavi_options['prev_text'] = '&laquo; Anterior';
     $pagenavi_options['dotright_text'] = '...';
     $pagenavi_options['dotleft_text'] = '...';
@@ -125,7 +126,7 @@ function pagenavi($before = '', $after = '') {
                 if(!empty($pagenavi_options['dotright_text'])) {
                     echo '<span class="expand">'.$pagenavi_options['dotright_text'].'</span>';
                 }
-                $last_page_text = str_replace("%TOTAL_PAGES%", number_format_i18n($max_page), $pagenavi_options['last_text']);
+                '<span class="bleble">'.$last_page_text = str_replace("%TOTAL_PAGES%", number_format_i18n($max_page), $pagenavi_options['last_text']).'</span>';
                 echo '<a href="'.esc_url(get_pagenum_link($max_page)).'" class="last" title="'.$last_page_text.'">'.$max_page.'</a>';
             }
             next_posts_link($pagenavi_options['next_text'], $max_page);
@@ -139,5 +140,5 @@ function pagenavi($before = '', $after = '') {
         }
     }
 }
-
+}
 ?>
