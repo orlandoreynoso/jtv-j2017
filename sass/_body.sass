@@ -229,8 +229,68 @@
 				border-bottom: 1px solid $grismasclaro
 
 /*=================== Secciones jesustv ====================================*/
-
-
+.secciones-jtv
+	.c-info
+		background-color: $blanco
+		min-height: 50px
+		display: flex
+		flex-flow: row wrap
+		box-sizing: border-box
+		justify-content: center
+		padding: 30px
+		.div1,
+		.div2,
+		.div3,
+		.div4
+			box-sizing: border-box
+			min-height: 180px
+			display: block
+			.si
+				margin-right: 10px
+				color: $blanco
+			.li1,.li2,.li3,.li4
+				box-sizing: border-box			
+				padding-top: 125px
+				padding-bottom: 15px
+				display: block
+				border-radius: 5px
+				height: 100%
+				width: auto
+				text-align: left
+				padding-left: 20px
+				color: $llema
+				font-weight: bold
+				text-decoration: none
+				text-shadow: 0px 1px 1px rgba(0, 0, 0, 1)
+				&:hover
+					color: $blanco
+					text-shadow: 0px 1px 1px rgba(0, 0, 0, 1)
+					filter: alpha(opacity=60)
+					-moz-opacity: 1.0
+					opacity: 0.6
+					-khml-opacity: 1.0
+					transition: 0.5s ease
+			.li1
+				background-image: url('../images/tv-en-linea.jpg')
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 100%
+				border-radius: 5px
+			.li2
+				background-image: url('../images/padre-hugo.jpg')
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 100%			
+			.li3
+				background-image: url('../images/googleplay.jpg')
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 100%			
+			.li4
+				background-image: url('../images/santo-del-mes.jpg')
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 100%					
 /*=======================================================*/
 .info-parroquial
 	.titulo-iglesia
@@ -265,7 +325,7 @@
 				padding: 0px 0px 8px 0px
 				display: block
 				&:hover
-					color: #009FFF
+					color: $celeste
 					transition: 0.5s ease
 					-o-transition: 0.5s ease
 					-webkit-transition: 0.5s ease
@@ -421,7 +481,7 @@
 			.title
 				font-size: 1.5em
 				font-family: 'Oswald', sans-serif
-				color: $celeste
+				color: $azul
 				&:hover
 					color: $verde
 			.date-cat
@@ -429,10 +489,10 @@
 				.fecha
 					font-family: 'Oswald', sans-serif					
 					font-size: 0.9em
-					color: $rosa
+					color: $azul
 					.icon-date
 						margin-right: 5px
-						color: $verde
+						color: $oro
 				.descripcion_categoria
 					font-family: 'Oswald', sans-serif					
 					font-size: 0.9em
@@ -441,9 +501,9 @@
 					color: $rosa
 					.icon-file
 						margin-right: 5px
-						color: $rosa
+						color: $oro
 					a
-						color: $celeste
+						color: $azul
 						&:hover
 							color: $verde
 			.thumb
@@ -475,29 +535,34 @@
 			color: $textogris
 			font-family: 'Open Sans', sans-serif
 		.titulo
-			@include titulo_cuadro($verde)
+			@include titulo_cuadro($azul)
 			color: $blanco
 			margin-bottom: 5px
 			.mapeo
 				a
-					color: $rosa
+					color: $llema
 					font-weight: bold
 					padding: 0px 4px 0px 4px
 					&:hover
-						color: $grisoscuro
+						color: $verde
 						font-weight: bold
 						transition: 0.5s ease
 	.side
 		.entradas
 			background-color: $grisclaro
+			.search
+				margin: 0px auto
+				padding-bottom: 10px
+				padding-top: 10px
+				padding-left: 10px
 			.titulo_entradas
-				@include titulo_cuadro($celeste)
+				padding: 10px
 				h3
 					font-size: 1.2em
-					color: $blanco
+					color: $azul
 					text-transform: uppercase
 					font-family: 'Oswald', sans-serif
-					margin: 0px
+					margin: 10px 0px 10px 0px
 					padding: 0px
 			.recientes
 				margin-bottom: 20px
@@ -509,7 +574,7 @@
 					margin-bottom: 5px
 					padding-bottom: 9px
 					overflow: hidden
-					border-bottom: 1px solid #009FFF
+					border-bottom: 1px solid $celeste
 					text-transform: lowercase
 					display: flex
 					flex-flow: row wrap
@@ -534,14 +599,14 @@
 								transition: 0.5s ease
 								box-shadow: 0 0 8px rgba(0, 120, 240, 0.8)
 					.title
-						color: #009FFF
+						color: $celeste
 						line-height: 1.3em
 						font-size: 1.1em
 						text-decoration: none
 						width: 78%
 						text-transform: lowercase
 						&:hover
-							color: #d53132
+							color: $azul
 							transition: 0.5s ease
 							-o-transition: 0.5s ease
 							-webkit-transition: 0.5s ease
@@ -551,11 +616,11 @@
 /*----*/
 footer
 	width: 100%
-	background-color: #d53132
+	background-color: $azul
 
 /*---*/
 #pie
-	background-color: #d53132
+	background-color: $azul
 	min-height: 150px
 	.group
 		padding: 50px
@@ -566,7 +631,7 @@ footer
 		text-shadow: 1px 2px 1px #000
 		font-size: 1.2em
 		a
-			color: #009FFF
+			color: $celeste
 			&:hover
 				color: #f2f2f2
 				transition: 0.5s ease

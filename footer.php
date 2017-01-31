@@ -5,8 +5,8 @@
 				<div class="col-md-12">
 					<div id="pie">
 						<div class="group">
-						<p>Parroquia Nuestra Señora del Sagrado Corazón</p>		
-						<p>Zona 2 de Mixco, Guatemala</p>
+						<p>Canal Jesustv |  Ciudad de Guatemala</p>		
+						<p>6av. 39-35 zona 8 | Teléfonos: (502) 2440-4032 / 2440-4719</p>
 						<p>Desarrollado por: <a href="http://www.orlandoreynoso.com">@orlandoreynoso</a></p>
 						</div>
 					</div>										
