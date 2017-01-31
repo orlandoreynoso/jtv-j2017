@@ -50,8 +50,8 @@ function last_publicaciones(){
      */
     $args_10 = array(
         //Post & Page Parameters
-        'post__not_in' => array(2883),
-        'post_parent__not_in'  => array(2883),
+        'post__not_in' => '',
+        'post_parent__not_in'  => '',
         'post_type' => 'any',
         'post_status' => 'publish',
         //Order & Orderby Parameters
@@ -91,8 +91,8 @@ function ultimas_paginas(){
      */
     $args_10 = array(
         //Post & Page Parameters
-        'post__not_in' => array(2883),
-        'post_parent__not_in'  => array(2883),
+        'post__not_in' => '',
+        'post_parent__not_in'  => '',
         'post_type' => 'any',
         'post_status' => 'publish',
         //Order & Orderby Parameters
