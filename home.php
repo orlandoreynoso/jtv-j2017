@@ -40,6 +40,7 @@ Template Post Type: post, page, product
        </div>
         <div class="col-xs-12 col-md-4 side">
           <div class="entradas">
+            <div class="search"><?php  get_search_form(); ?></div>
             <div class="titulo_entradas">
               <h3>Entradas recientes</h3>
             </div>
