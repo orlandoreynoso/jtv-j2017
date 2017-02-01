@@ -7,6 +7,7 @@ Template Name: Index
 
 ?>
 
+<?php include (TEMPLATEPATH . '/libs/menu.php'); ?>
 
 <section class="con-general">
 

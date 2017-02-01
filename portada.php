@@ -14,6 +14,8 @@ Template Post Type: post, page, product
     </div>
 </div>
 
+<?php include (TEMPLATEPATH . '/libs/menu.php'); ?>
+
 <section class="secciones-jtv">
 <div class="container">
 	<div class="row">

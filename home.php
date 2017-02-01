@@ -6,6 +6,8 @@ Template Post Type: post, page, product
 ?>
 <?php get_header(); ?>
 
+<?php include (TEMPLATEPATH . '/libs/menu.php'); ?>
+
 <section class="con-general">
 
   <div class="container">

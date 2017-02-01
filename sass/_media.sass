@@ -9,7 +9,7 @@
 	.navbar-default 
 		.navbar-brand
 			&:hover
-				color: $verde
+				color: $blanco
 		.navbar-toggle
 			&:hover
 				color: $blanco
@@ -109,10 +109,7 @@
 							margin-right: 10px
 							.icon-file4
 	.tc-iconos
-		display: flex
-		flex-flow: row wrap
 		box-sizing: border-box
-		background-color: $verde
 		margin: 0px auto
 		height: auto
 		width: 100%
@@ -123,7 +120,10 @@
 			font-family: 'Oswald', sans-serif
 			&:hover
 				background-color: $verde
+@media screen and (max-width: 650px)	
 @media screen and (max-width: 768px)
+	.navbar-header
+		display: block
 	.m-header
 		.ls
 			margin: 0px auto
@@ -144,6 +144,14 @@
 				.icon
 			.search
 				.searchbar
+	.navbar-default 
+		.navbar-brand
+			&:hover
+				color: $blanco
+		.navbar-toggle
+			&:hover
+				color: $blanco
+				background-color: $verde				
 	.navbar-nav 
 		.open
 			background-color: $blanco
@@ -159,7 +167,17 @@
 		.c-recomendaciones
 			width: 100%
 			.list
-				width: 50%						
+				width: 50%
+	.secciones-jtv
+		.c-info
+			.div1,
+			.div2,
+			.div3,
+			.div4
+				width: 100%
+				.li1,.li2,.li3,.li4
+					display: block
+					
 @media screen and (max-width: 800px)
 	.groupings
 		.titulo--groupings

@@ -7,42 +7,6 @@ include get_template_directory().'/libs/headermeta.php';
 
 <body>
 
-<div class="e-menu">
-	<div class="container">
-		<div class="row">
-				<div class="col-md-12">
-					<nav class="navbar navbar-default" role="navigation">
-					  <div class="container-fluid">
-					    <!-- Brand and toggle get grouped for better mobile display -->
-					    <div class="navbar-header">
-					      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					      </button>
-			    		  <a class="navbar-brand" href="#">Menu</a> 
-					    </div>
-
-					        <?php
-					            wp_nav_menu( array(
-					                'menu'              => 'primary',
-					                'theme_location'    => 'primary',
-					                'depth'             => 2,
-					                'container'         => 'div',
-					                'container_class'   => 'collapse navbar-collapse',
-					        		'container_id'      => 'bs-example-navbar-collapse-1',
-					                'menu_class'        => 'nav navbar-nav',
-					                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-					                'walker'            => new wp_bootstrap_navwalker())
-					            );
-					        ?>
-					    </div>
-					</nav>
-			</div>
-		</div>
-	</div>
-</div>
 <div class="m-header">
 <div class="container">
 	<div class="row">

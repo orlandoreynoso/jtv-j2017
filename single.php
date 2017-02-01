@@ -9,6 +9,7 @@
 
 ?>
 
+<?php include (TEMPLATEPATH . '/libs/menu.php'); ?>
 
 <section class="con-general">
 

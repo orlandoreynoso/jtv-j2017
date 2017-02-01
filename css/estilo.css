@@ -327,6 +327,7 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0px auto;
     vertical-align: top; }
 
+/*================ mixin sidebar ========= */
 /*============================== */
 /*======================================================= */
 .espiritualidad {
@@ -689,8 +690,14 @@ input[type=number]::-webkit-outer-spin-button {
   .secciones-jtv .c-info .div3,
   .secciones-jtv .c-info .div4 {
     box-sizing: border-box;
-    min-height: 180px;
-    display: block; }
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px; }
+    .secciones-jtv .c-info .div1 img,
+    .secciones-jtv .c-info .div2 img,
+    .secciones-jtv .c-info .div3 img,
+    .secciones-jtv .c-info .div4 img {
+      border-radius: 5px; }
     .secciones-jtv .c-info .div1 .si,
     .secciones-jtv .c-info .div2 .si,
     .secciones-jtv .c-info .div3 .si,
@@ -955,6 +962,131 @@ input[type=number]::-webkit-outer-spin-button {
         .groupings .c-agrupaciones .list .label a:hover {
           color: #33b147; }
 
+/*==================== contenido programas   ================================== */
+.con-programas {
+  background-color: #ffffff;
+  padding-top: 10px; }
+  .con-programas .con .titulo {
+    background-color: #0e3655;
+    padding: 24px 0px 17px 25px;
+    color: #ffffff;
+    margin-bottom: 5px; }
+  .con-programas .con .contenido {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px; }
+    .con-programas .con .contenido .title {
+      font-size: 1.5em;
+      font-family: "Oswald", sans-serif;
+      color: #0e3655; }
+      .con-programas .con .contenido .title:hover {
+        color: #33b147; }
+    .con-programas .con .contenido .date-cat {
+      padding: 10px; }
+      .con-programas .con .contenido .date-cat .fecha {
+        font-family: "Oswald", sans-serif;
+        font-size: 0.9em;
+        color: #0e3655; }
+        .con-programas .con .contenido .date-cat .fecha .icon-date {
+          margin-right: 5px;
+          color: #ffa200; }
+      .con-programas .con .contenido .date-cat .descripcion_categoria {
+        font-family: "Oswald", sans-serif;
+        font-size: 0.9em;
+        float: right;
+        text-align: right;
+        color: red; }
+        .con-programas .con .contenido .date-cat .descripcion_categoria .icon-file {
+          margin-right: 5px;
+          color: #ffa200; }
+        .con-programas .con .contenido .date-cat .descripcion_categoria a {
+          color: #0e3655; }
+          .con-programas .con .contenido .date-cat .descripcion_categoria a:hover {
+            color: #33b147; }
+    .con-programas .con .contenido .thumb {
+      padding: 5px; }
+      .con-programas .con .contenido .thumb img {
+        width: 100%;
+        height: auto; }
+        .con-programas .con .contenido .thumb img:hover {
+          filter: alpha(opacity=50);
+          -moz-opacity: 1;
+          opacity: 0.5;
+          -khml-opacity: 1;
+          transition: 0.5s ease;
+          box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
+    .con-programas .con .contenido .info {
+      padding: 5px 10px 10px 10px;
+      line-height: 1.625em;
+      font-size: 1.0625em;
+      color: #302f2f;
+      font-family: "Open Sans", sans-serif; }
+  .con-programas .side .entradas {
+    background-color: #f2f2f2; }
+    .con-programas .side .entradas .search {
+      margin: 0px auto;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 10px; }
+    .con-programas .side .entradas .titulo_entradas {
+      padding: 10px; }
+      .con-programas .side .entradas .titulo_entradas h3 {
+        font-size: 1.2em;
+        color: #0e3655;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        margin: 10px 0px 10px 0px;
+        padding: 0px; }
+    .con-programas .side .entradas .recientes {
+      margin-bottom: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px; }
+      .con-programas .side .entradas .recientes .list {
+        padding: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 9px;
+        overflow: hidden;
+        border-bottom: 1px solid #009FFF;
+        text-transform: lowercase;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box; }
+        .con-programas .side .entradas .recientes .list .thumb {
+          width: 20%; }
+          .con-programas .side .entradas .recientes .list .thumb img {
+            width: 90%;
+            height: auto;
+            display: inline-block;
+            float: left;
+            margin-right: 7px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+            border: 2px solid #ffffff; }
+            .con-programas .side .entradas .recientes .list .thumb img:hover {
+              filter: alpha(opacity=50);
+              -moz-opacity: 1;
+              opacity: 0.5;
+              -khml-opacity: 1;
+              transition: 0.5s ease;
+              box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
+        .con-programas .side .entradas .recientes .list .title {
+          color: #009FFF;
+          line-height: 1.3em;
+          font-size: 1.1em;
+          text-decoration: none;
+          width: 78%;
+          text-transform: lowercase; }
+          .con-programas .side .entradas .recientes .list .title:hover {
+            color: #0e3655;
+            transition: 0.5s ease;
+            -o-transition: 0.5s ease;
+            -webkit-transition: 0.5s ease; }
+          .con-programas .side .entradas .recientes .list .title:first-letter {
+            text-transform: uppercase; }
+
+/*======================= contenido general principal ========================== */
 .con-general {
   background-color: #ffffff;
   padding-top: 10px; }
@@ -1002,6 +1134,7 @@ input[type=number]::-webkit-outer-spin-button {
         color: #302f2f;
         font-family: "Open Sans", sans-serif; }
 
+/*====================== contenido general ====================== */
 .con-general .con img {
   max-width: 100%;
   height: auto; }
@@ -1390,7 +1523,7 @@ footer {
     color: red; }
 
   .navbar-default .navbar-brand:hover {
-    color: #33b147; }
+    color: #ffffff; }
   .navbar-default .navbar-toggle:hover {
     color: #ffffff;
     background-color: #33b147; }
@@ -1478,10 +1611,7 @@ footer {
               margin-right: 10px; }
 
   .tc-iconos {
-    display: flex;
-    flex-flow: row wrap;
     box-sizing: border-box;
-    background-color: #33b147;
     margin: 0px auto;
     height: auto;
     width: 100%; }
@@ -1493,6 +1623,9 @@ footer {
       .tc-iconos .tci:hover {
         background-color: #33b147; } }
 @media screen and (max-width: 768px) {
+  .navbar-header {
+    display: block; }
+
   .m-header .ls {
     margin: 0px auto;
     padding: 0px;
@@ -1509,6 +1642,12 @@ footer {
     padding-top: 15px;
     margin-bottom: 10px; }
 
+  .navbar-default .navbar-brand:hover {
+    color: #ffffff; }
+  .navbar-default .navbar-toggle:hover {
+    color: #ffffff;
+    background-color: #33b147; }
+
   .navbar-nav .open {
     background-color: #ffffff;
     color: red; }
@@ -1521,7 +1660,27 @@ footer {
   .recomen .c-recomendaciones {
     width: 100%; }
     .recomen .c-recomendaciones .list {
-      width: 50%; } }
+      width: 50%; }
+
+  .secciones-jtv .c-info .div1,
+  .secciones-jtv .c-info .div2,
+  .secciones-jtv .c-info .div3,
+  .secciones-jtv .c-info .div4 {
+    width: 100%; }
+    .secciones-jtv .c-info .div1 .li1, .secciones-jtv .c-info .div1 .li2, .secciones-jtv .c-info .div1 .li3, .secciones-jtv .c-info .div1 .li4,
+    .secciones-jtv .c-info .div2 .li1,
+    .secciones-jtv .c-info .div2 .li2,
+    .secciones-jtv .c-info .div2 .li3,
+    .secciones-jtv .c-info .div2 .li4,
+    .secciones-jtv .c-info .div3 .li1,
+    .secciones-jtv .c-info .div3 .li2,
+    .secciones-jtv .c-info .div3 .li3,
+    .secciones-jtv .c-info .div3 .li4,
+    .secciones-jtv .c-info .div4 .li1,
+    .secciones-jtv .c-info .div4 .li2,
+    .secciones-jtv .c-info .div4 .li3,
+    .secciones-jtv .c-info .div4 .li4 {
+      display: block; } }
 @media screen and (max-width: 800px) {
   .groupings .c-agrupaciones {
     width: 100%; }
