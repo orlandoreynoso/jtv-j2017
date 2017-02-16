@@ -130,6 +130,40 @@ if ( $the_query->have_posts() ) {
  wp_reset_postdata();  
 }
 
+/*===================CARGANDO SANTOS ============================*/
+function cargar_santos($cat, $perpage){
+
+$the_query  = query_posts( 
+    array( 
+        'cat' => $cat, 
+        'posts_per_page' => $perpage, 
+        'orderby' => 'title', 
+        'order' => 'DESC' )
+    );
+
+ while ( have_posts() ) : the_post(); ?>
+<div class="actual col-xs-12 col-md-3">
+    <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
+    <div class="label">
+        <div class="ic-1">
+            <!-- i class="icon-file fa fa-file"></i -->
+            <div class="cat">
+                <a href="<?php the_permalink(); ?>" ><?php the_category(' , '); ?></a>
+            </div>
+        </div>
+    </div>
+    <div class="exe"><?php the_excerpt(); ?> </div>
+</div>
+<?php
+endwhile;
+ 
+wp_reset_query();
+
+
+}
+
+
 /*=================================================*/
 function obtener_categoria($nombre,$id){    ?>
     <div id="titulo_<?php echo $id; ?>">
@@ -189,6 +223,15 @@ function get_laterales($pagina,$perpage, $titulo, $clase){
 function create_page($paginaid, $perpage){
     $args = array(                
         'post_type' => 'page',
+        'post_parent'       => ''.$paginaid.'',
+        'posts_per_page'         => ''.$perpage.'',
+    );  
+    return $args;
+}
+
+function create_santo($paginaid, $perpage){
+    $args = array(                
+        'post_type' => 'post',
         'post_parent'       => ''.$paginaid.'',
         'posts_per_page'         => ''.$perpage.'',
     );  

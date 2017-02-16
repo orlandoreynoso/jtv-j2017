@@ -965,7 +965,8 @@ input[type=number]::-webkit-outer-spin-button {
 /*==================== contenido programas   ================================== */
 .con-programas {
   background-color: #ffffff;
-  padding-top: 10px; }
+  padding-top: 10px;
+  margin-bottom: 20px; }
   .con-programas .con .titulo {
     background-color: #0e3655;
     padding: 24px 0px 17px 25px;
@@ -1324,6 +1325,171 @@ footer {
         margin: 5px auto; }
         .e-contenedor .docs .list .title:hover {
           color: #33b147; }
+
+.con-santos {
+  margin-bottom: 20px; }
+
+.santos {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden; }
+  .santos .actual {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    border-bottom: 1px solid #e9e9e9; }
+    .santos .actual .exe {
+      margin-top: 5px;
+      min-height: 110px;
+      font-size: 1em; }
+    .santos .actual .thumb {
+      width: 100%;
+      height: auto;
+      display: block; }
+      .santos .actual .thumb img {
+        width: auto;
+        max-height: 150px;
+        min-height: 150px;
+        margin: 0px auto;
+        text-align: center;
+        vertical-align: middle;
+        display: block; }
+        .santos .actual .thumb img:hover {
+          filter: alpha(opacity=50);
+          -moz-opacity: 1;
+          opacity: 0.5;
+          -khml-opacity: 1;
+          transition: 0.5s ease;
+          box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
+    .santos .actual .title {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.55em;
+      color: #009FFF;
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin: 5px auto 5px auto; }
+      .santos .actual .title:hover {
+        color: #33b147; }
+    .santos .actual .label {
+      width: 100%;
+      padding: 15px 0px;
+      display: block;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: row wrap; }
+      .santos .actual .label .ic-1 {
+        width: 33%;
+        box-sizing: border-box; }
+        .santos .actual .label .ic-1 .icon-file3 {
+          margin-right: 10px;
+          color: #33b147; }
+        .santos .actual .label .ic-1 .icon-file {
+          margin-right: 10px;
+          color: #009FFF; }
+      .santos .actual .label .ic-2 {
+        width: 33%;
+        box-sizing: border-box; }
+        .santos .actual .label .ic-2 .icon-file2 {
+          margin-right: 10px;
+          margin-left: 10px;
+          color: #009FFF; }
+      .santos .actual .label .ic-3 {
+        width: 33%;
+        box-sizing: border-box; }
+        .santos .actual .label .ic-3 .icon-file4 {
+          margin-right: 10px;
+          margin-left: 10px;
+          color: red; }
+      .santos .actual .label .dia {
+        margin-right: 10px;
+        color: #009FFF; }
+      .santos .actual .label a {
+        color: #333333; }
+        .santos .actual .label a:hover {
+          color: #009FFF; }
+    .santos .actual .thumb {
+      width: 100%;
+      max-height: 150px;
+      display: block; }
+      .santos .actual .thumb img {
+        width: 100%;
+        max-height: auto;
+        margin: 0px auto;
+        text-align: center;
+        vertical-align: middle;
+        display: block; }
+        .santos .actual .thumb img:hover {
+          filter: alpha(opacity=50);
+          -moz-opacity: 1;
+          opacity: 0.5;
+          -khml-opacity: 1;
+          transition: 0.5s ease;
+          box-shadow: 0 0 8px rgba(0, 120, 240, 0.8); }
+    .santos .actual .title {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.1em;
+      color: #009FFF;
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin: 10px auto;
+      padding-bottom: 2px;
+      min-height: 70px; }
+      .santos .actual .title:hover {
+        color: #33b147; }
+      .santos .actual .title h3 {
+        font-size: 1.2em;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        margin: 0px;
+        padding: 0px; }
+    .santos .actual .label {
+      width: 100%;
+      padding: 15px 0px;
+      display: block;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-content: flex-start;
+      text-align: left; }
+      .santos .actual .label .ic-1 {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        background-color: #ffffff; }
+        .santos .actual .label .ic-1 .icon-file {
+          margin-right: 0px;
+          margin-left: 0px;
+          width: 10%;
+          color: #33b147;
+          box-sizing: border-box;
+          display: inline-block; }
+        .santos .actual .label .ic-1 .cat {
+          text-align: left;
+          box-sizing: border-box;
+          overflow: hidden;
+          display: inline-block; }
+          .santos .actual .label .ic-1 .cat ul li {
+            list-style: none;
+            display: inline-block; }
+      .santos .actual .label .dia {
+        margin-right: 10px;
+        color: #0e3655; }
+      .santos .actual .label a {
+        color: #333333; }
+        .santos .actual .label a:hover {
+          color: #0e3655; }
+    .santos .actual .exe {
+      margin-top: 5px;
+      min-height: 110px;
+      font-size: 1em; }
 
 .tc-iconos {
   display: flex;
