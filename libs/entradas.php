@@ -130,6 +130,15 @@ if ( $the_query->have_posts() ) {
  wp_reset_postdata();  
 }
 
+
+/*============== listar santos================================*/
+function lista_santos($nombre,$url){?>
+<div class="ss col-xs-12 col-sm-6 col-md-3">
+    <a class="title" href="<?php bloginfo('url'); ?>/category/santos-del-mes/<?php echo $url; ?>"><?php echo $nombre; ?></a>
+    <a class="thumb" href="<?php bloginfo('url'); ?>/category/santos-del-mes/<?php echo $url; ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/<?php echo $url; ?>.jpg" alt=""></a> 
+</div>
+<?php
+}
 /*===================CARGANDO SANTOS ============================*/
 function cargar_santos($cat, $perpage){
 
@@ -142,7 +151,7 @@ $the_query  = query_posts(
     );
 
  while ( have_posts() ) : the_post(); ?>
-<div class="actual col-xs-12 col-md-3">
+<div class="actual col-xs-12 col-sm-6 col-md-3">
     <a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
     <a class="thumb" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a> 
     <div class="label">
@@ -153,7 +162,7 @@ $the_query  = query_posts(
             </div>
         </div>
     </div>
-    <div class="exe"><?php the_excerpt(); ?> </div>
+    <div class="exe"><?php excerpt(20); ?></div>
 </div>
 <?php
 endwhile;

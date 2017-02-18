@@ -13,24 +13,30 @@
           <div class="titulo"><div class="mapeo"><?php the_breadcrumb(); ?></div></div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12 col-md-12 con">
-          <div class="santos">
-            <?php // include(TEMPLATEPATH.'/libs/santos.php'); ?>
-            <?php cargar_santos(26,1); ?>
-          </div>          
-        </div> 
-    </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-xs-6 col-md-2"><?php cargar_santos(27,1); ?></div> 
-      <div class="col-xs-6 col-md-2"><?php cargar_santos(28,1); ?></div> 
-      <div class="col-xs-6 col-md-2"><?php cargar_santos(29,1); ?></div> 
-      <div class="col-xs-6 col-md-2"><?php cargar_santos(30,1); ?></div> 
-      <div class="col-xs-6 col-md-2"><?php cargar_santos(39,1); ?></div> 
-      <div class="col-xs-6 col-md-2"><?php cargar_santos(40,1); ?></div>                               
+        <div class="col-xs-12 col-md-12 con">
+          <div class="santos">
+            <?php include(TEMPLATEPATH.'/libs/santosall.php'); ?>            
+            <?php /*
+            <?php cargar_santos(27,1); ?>
+            <?php cargar_santos(28,1); ?>
+            <?php cargar_santos(29,1); ?>
+            <?php cargar_santos(30,1); ?>
+            <?php cargar_santos(39,1); ?>
+            <?php cargar_santos(40,1); ?>            
+            <?php cargar_santos(33,1); ?>
+            <?php cargar_santos(34,1); ?>
+            <?php cargar_santos(35,1); ?>
+            <?php cargar_santos(41,1); ?>
+            <?php cargar_santos(36,1); ?>
+            <?php cargar_santos(37,1); ?>            
+            */ ?>            
+          </div>                    
+        </div> 
     </div>
+
     <?php /*
     <div class="row">
       <div class="col-xs-6 col-md-2"><a href="<?php bloginfo('url'); ?>/category/santos-del-mes/enero">Enero</a></div> 
@@ -38,7 +44,7 @@
       <div class="col-xs-6 col-md-2"><a href="<?php bloginfo('url'); ?>/category/santos-del-mes/marzo">Marzo</a></div> 
       <div class="col-xs-6 col-md-2"><a href="<?php bloginfo('url'); ?>/category/santos-del-mes/abril">Abril</a></div>
       <div class="col-xs-6 col-md-2"><a href="<?php bloginfo('url'); ?>/category/santos-del-mes/mayo">Mayo</a></div> 
-      <div class="col-xs-6 col-md-2"><a href="<?php bloginfo('url'); ?>/category/santos-del-mes/junio">Junio</a></div>                               
+      <div class="col-xs-6 col-md-2"><a href="<?php bloginfo('url'); ?>/category/santos-del-mes/junio">Junio</a></div>    
     </div>
     <div class="row">
       <div class="col-xs-6 col-md-2"><a href="<?php bloginfo('url'); ?>/category/santos-del-mes/julio">Julio</a></div> 
